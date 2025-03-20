@@ -1,19 +1,18 @@
-const varNome = document.getElementById('nome');
+const varEmail = document.getElementById('email');
 const varSenha = document.getElementById('senha');
 const varEnviar = document.getElementById('enviar');
 
 const login = {
-    nome: 'Pedro',
+    email: 'pedro@gmail.com',
     senha: '1234',
 }
 
-function validarCampos(varNome, varSenha) {
-    if (varNome == '' && varSenha == '') {
-        window.alert('Todos os campos são obrigatórios!!!');
-    }
-    if (varNome != login.nome && varSenha != login.senha) {
-        window.alert('Nome ou senha incorretos!');
-    } else {
+function validarCampos(varEmail, varSenha) {
+
+    if (varEmail === login.email && varSenha === login.senha) {
         window.alert('Login realizado com sucesso!!!');
+    } else {
+        window.alert('Email ou senha incorretos!');
     }
+
 }
